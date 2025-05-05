@@ -46,7 +46,7 @@ header p {
 nav ul {
   display: flex;
   justify-content: center;
-  list-style: none; /* Remover bolinhas */
+  list-style: none;
   background-color: #1F1F1F;
   padding: 0;
 }
