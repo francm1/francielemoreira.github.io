@@ -1,69 +1,119 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #000000;
-  color: #ffffff;
+/* Resetando margens e padding */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definindo fontes e cores principais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000; /* Preto */
+  color: #fff; /* Texto branco */
+}
+
+h1, h2 {
+  color: #F0A6CA; /* Rosa claro */
+}
+
+a {
+  text-decoration: none;
+  color: #F0A6CA; /* Rosa claro */
+}
+
+a:hover {
+  color: #D5006D; /* Fúcsia */
+  transition: color 0.3s ease;
 }
 
 header {
-  background: #000000;
-  color: #ff69b4;
-  padding: 40px 20px;
+  background-color: #1F1F1F; /* Cor de fundo escura */
+  padding: 20px;
   text-align: center;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 3em;
-  color: #ff1493;
+  font-size: 2.5rem;
+  color: #F0A6CA;
 }
 
 header p {
-  margin-top: 10px;
-  font-style: italic;
-  color: #ff69b4;
+  font-size: 1.2rem;
+  color: #F0A6CA;
 }
 
-nav {
-  background-color: #ff69b4;
-  padding: 15px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  background-color: #1F1F1F;
+  padding: 10px;
 }
 
-nav a {
-  color: #000000;
-  margin: 0 20px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-  transition: color 0.3s ease;
+nav ul li {
+  margin: 0 15px;
 }
 
-nav a:hover {
-  color: #ffffff;
-  text-decoration: underline;
+nav ul li a {
+  font-size: 1.2rem;
+  color: #F0A6CA;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #D5006D; /* Fúcsia */
+  color: #fff;
 }
 
 section {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: auto;
+  padding: 40px;
+  text-align: center;
 }
 
-section img {
-  max-width: 220px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 25px;
-  box-shadow: 0 0 10px #ff1493;
+section#sobre {
+  background-color: #2C2C2C;
+}
+
+section#projetos {
+  background-color: #1F1F1F;
+}
+
+section#contato {
+  background-color: #2C2C2C;
 }
 
 footer {
-  background: #ff69b4;
+  background-color: #1F1F1F;
+  color: #F0A6CA;
   text-align: center;
-  padding: 25px;
-  font-size: 1em;
-  color: #000000;
+  padding: 10px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Estilo para as imagens */
+#sobre img {
+  max-width: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Estilo para listas de projetos */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+ul li strong {
+  color: #F0A6CA;
 }
