@@ -46,9 +46,9 @@ header p {
 nav ul {
   display: flex;
   justify-content: center;
-  list-style-type: none;
+  list-style: none;
   background-color: #1F1F1F;
-  padding: 10px;
+  padding: 0;
 }
 
 nav ul li {
@@ -67,6 +67,25 @@ nav ul li a:hover {
   background-color: #D5006D; /* Fúcsia */
   color: #fff;
 }
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #D5006D; /* Fúcsia */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 
 section {
   padding: 40px;
@@ -96,10 +115,13 @@ footer p {
   font-size: 1rem;
 }
 
-/* Estilo para as imagens */
+/* Estilo para a imagem circular */
 #sobre img {
   max-width: 300px;
-  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%; /* Tornando a imagem circular */
   margin-top: 20px;
 }
 
