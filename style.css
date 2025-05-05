@@ -46,9 +46,9 @@ header p {
 nav ul {
   display: flex;
   justify-content: center;
-  list-style: none;
+  list-style-type: none;
   background-color: #1F1F1F;
-  padding: 0;
+  padding: 10px;
 }
 
 nav ul li {
