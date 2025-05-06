@@ -1,141 +1,197 @@
 /* Resetando margens e padding */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definindo fontes e cores principais */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #D8C8B8; /* Marrom claro */
+    color: #fff; /* Texto branco */
+  }
+  
+  h1, h2 {
+    color: #C53D42; /* Marsala */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #C53D42; /* Marsala */
+  }
+  
+  a:hover {
+    color: #581D22; /* Tom mais escuro de Marsala */
+    transition: color 0.3s ease;
+  }
+  
+  header {
+    background-color: #1F1F1F; /* Cor de fundo escura */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    color: #C53D42;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #C53D42;
+  }
+  
+  /* Menu de navegação */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #1F1F1F;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    font-size: 1.2rem;
+    color: #C53D42;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #581D22; /* Marsala */
+    color: #fff;
+  }
+  
+  /* Ajustes para seções */
+  section {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Sobre */
+  section#sobre {
+    background-color: #D8C8B8; /* Marrom claro */
+    color: #fff; /* Texto branco */
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  section#sobre h2 {
+    font-size: 2.5rem; /* Tamanho maior para o título */
+    color: #C53D42; /* Marsala */
+    margin-bottom: 20px;
+  }
+  
+  section#sobre p {
+    font-size: 1.5rem; /* Aumento do tamanho da fonte */
+    line-height: 1.8; /* Maior espaçamento entre as linhas */
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  section#sobre p span {
+    display: block;
+    margin: 10px 0; /* Adiciona espaçamento entre as frases */
+  }
+  
 
-/* Definindo fontes e cores principais */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #2C1B2E; /* Tom marrom escuro inspirado em Mocha Mousse */
-  color: #F1E6D6; /* Bege Claro (Texto) */
-}
-
-h1, h2 {
-  color: #F1E6D6; /* Bege Claro */
-}
-
-a {
-  text-decoration: none;
-  color: #F1E6D6; /* Bege Claro */
-}
-
-a:hover {
-  color: #D5006D; /* Fúcsia */
-  transition: color 0.3s ease;
-}
-
-header {
-  background-color: #3E2B2C; /* Tom de marrom médio */
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: #F1E6D6; /* Bege Claro */
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #F1E6D6; /* Bege Claro */
-}
-
-/* Menu de navegação */
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  background-color: #3E2B2C; /* Marrom médio */
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  font-size: 1.2rem;
-  color: #F1E6D6; /* Bege Claro */
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: #D5006D; /* Fúcsia */
-  color: #fff;
-}
-
-nav ul li a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #D5006D; /* Fúcsia */
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease;
-}
-
-nav ul li a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-section {
-  padding: 40px;
-  text-align: center;
-}
-
-section#sobre {
-  background-color: #4E3C39; /* Tom mais claro de marrom */
-}
-
-section#projeto {
-  background-color: #3E2B2C; /* Marrom médio */
-}
-
-section#contato {
-  background-color: #4E3C39; /* Tom mais claro de marrom */
-}
-
-footer {
-  background-color: #3E2B2C; /* Marrom médio */
-  color: #F1E6D6; /* Bege Claro */
-  text-align: center;
-  padding: 10px;
-}
-
-footer p {
-  font-size: 1rem;
-}
-
-/* Estilo para a imagem circular */
-#sobre img {
-  max-width: 300px;
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%; /* Tornando a imagem circular */
-  margin-top: 20px;
-}
-
-/* Estilo para listas de projeto */
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-ul li {
-  margin-bottom: 20px;
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-ul li strong {
-  color: #D5006D; /* Fúcsia para destacar os títulos dos projetos */
-}
+  section#projeto {
+    background-color: #2C2C2C;
+  }
+  
+  section#contato {
+    background-color: #D8C8B8; /* Marrom claro */
+  }
+  
+  /* Ajustes para o visual de Contato */
+  #contato {
+    background-color: #D8C8B8; /* Marrom claro */
+    color: #fff;
+  }
+  
+  #contato p {
+    font-size: 1.1rem;
+  }
+  
+  #contato a {
+    font-size: 1.1rem;
+    color: #C53D42;
+    transition: color 0.3s ease;
+  }
+  
+  #contato a:hover {
+    color: #581D22;
+  }
+  
+  /* Estilo para a imagem circular */
+  #sobre img {
+    max-width: 300px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%; /* Tornando a imagem circular */
+    margin-top: 20px;
+  }
+  
+  /* Estilo para listas de projeto - mantendo os projetos lado a lado */
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    background-color: #3A3A3A; /* Cor de fundo dos projetos */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    width: 250px; /* Largura dos cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  ul li:hover {
+    transform: translateY(-10px); /* Efeito de hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  ul li strong {
+    color: #C53D42; /* Marsala para o título dos projetos */
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  ul li p {
+    color: #ddd; /* Texto mais suave */
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Ajustes para tornar os cards responsivos */
+  @media (max-width: 768px) {
+    ul li {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  footer {
+    background-color: #1F1F1F;
+    color: #C53D42;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
